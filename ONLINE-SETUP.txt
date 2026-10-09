@@ -1,0 +1,16 @@
+# GoldRush – online på tværs af telefoner
+
+Appen bruger Firebase Realtime Database, så konti, venner og chat virker på forskellige enheder.
+
+## Setup (5 min, gratis)
+
+1. Gå til https://console.firebase.google.com og opret projekt "GoldRush"
+2. Build → Realtime Database → Create Database → Start in **test mode** (eller rules der tillader read/write)
+3. Project settings (tandhjul) → Your apps → Web-app → kopiér config
+4. Åbn index.html / GoldRush-komplet.html
+5. Find `FIREBASE_CONFIG` øverst i <script> og indsæt dine værdier:
+   - apiKey, authDomain, databaseURL, projectId, appId osv.
+6. Host filerne (Netlify, GitHub Pages, Firebase Hosting) ELLER åbn samme fil med config på begge telefoner
+7. Opret konto på din telefon og på din vens – tilføj hinanden under Profil → Venner
+
+Uden Firebase kører alt kun lokalt på én enhed.
